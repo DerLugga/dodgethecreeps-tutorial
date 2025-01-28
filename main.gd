@@ -14,3 +14,8 @@ func _process(delta: float) -> void:
 
 func game_over() -> void:
 	pass # Replace with function body.
+	
+func new_game():
+	score = 0
+	$Player.start($StartPosition.position)
+	$StartTimer.start()
